@@ -1,0 +1,506 @@
+/* El selector universal * afecta a absolutamente todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html
+{
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+
+}
+
+body
+{
+    background-image: url('../IMAGENES/background.png');
+    
+}
+a
+{
+    text-decoration: none;
+    font-style: normal;
+   
+}
+li
+{
+    list-style: none;
+
+}
+
+.barra_superior
+{
+    
+    margin-top: 0%;
+    min-height: 100px;
+    width: 100%;
+    max-width: 100%;
+    background-image: url('../IMAGENES/slide2.jpg');
+    background-size: cover;
+    background-position: center;
+    border:"1";
+    background-color: darkgoldenrod;
+    border-color: "#006600";
+    
+}
+
+.bandera_V
+{   
+
+    margin-left: 24px;
+    width: 146px;
+    height: auto;
+
+    
+}
+p
+{
+    margin-bottom: 15px;
+}
+.head
+{
+    height:"200";
+    width:"100%";
+    border:"1";
+
+}
+
+.marquee_cont
+{
+    
+    width: 100%;
+    overflow: hidden;
+    padding-left: 100%;
+    
+    padding: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    justify-content: center;
+    
+   
+}
+
+.texto_desplazable
+{   
+    
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 18pt;
+    padding-left: 60%;
+    
+    animation: marquesina 12s linear infinite;
+    
+
+}
+
+h1
+{
+    color:#022402;
+    border-color: bisque;
+}
+
+@keyframes marquesina
+{
+
+    0%{transform: translateX(100%);}
+    100%{transform: translate(-100%);}
+
+} 
+
+
+.contenedor_P
+{
+    display: flex;
+
+    align-items: center;
+    padding: 0;
+
+}
+
+
+.ubicacion
+{
+    width: 100%;
+
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 10pt;
+    font-family: "Arial Black";
+
+
+}
+
+.bienvenida
+{
+    margin-left: 10%;
+    margin-right: 5%;
+    overflow: hidden;
+    width: 75%;
+    font-size: 10pt;
+    background-color: #004600;
+    font-family: "Arial Black";
+    color: #FFFF00;
+    text-align: center;
+    
+    
+}
+
+
+.menu-container
+{
+    margin-top: 0.4%;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(0, 29, 10);
+
+
+}
+
+.menu-lista
+{
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menu-lista a
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-family: 'Console';
+}
+
+.menu-lista li  /*Agregar aqui la separacion de los botones*/
+{
+    margin: 0; 
+    padding: 0;
+    
+}
+
+.menu-lista a:hover
+{
+    text-decoration: double;
+    background-color: #305235b4;
+    font-weight: 700;
+}
+
+/*Barra lateral*/
+.Contenedor_PP
+{
+    display: flex;
+    min-height: 100vh;
+    
+
+    /* EJEMPLO */
+    /* background-image: url('../IMAGENES/slide1.jpg');
+    background-size: cover;
+    background-position: center; */
+
+}
+
+.BarraLaterar
+{
+    text-align: justify;
+    /* EJEMPLO */
+    /* background-color: #022402a2; */
+    border: 1px solid  rgb(70, 69, 69);
+    min-width: 25%;
+    width: 28%;        /* Ancho fijo de la barra lateral */
+    /* background-color: #ffffff; Cambiar luego<-    */
+    
+    margin-left: 10px;
+    padding-top: 0px;
+    
+}
+
+.BarraLaterar h5
+{
+   
+    margin: 2px 2px 0px 2px;
+    padding-left: 12px;
+    text-align: center;
+    font-family: 'Arial Black';
+    font-weight: bold;
+    border: 0.5px solid gray;
+
+
+}
+
+.BarraLaterar ul h5
+{
+    margin-top: 0px;
+    text-align: Left;
+    font-family: 'Arial Black';
+    font-weight: 700;
+    border: 0px solid gray;
+} 
+
+
+.BarraLaterar a
+{
+   
+    text-decoration: none;
+    display: block;
+    padding: 2px;
+    padding-right: 10px;
+    padding-left: 30px;
+    font-weight: 500;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.BarraLaterar li {
+  margin-bottom: 15px;
+}
+
+.BarraLaterar a:hover {
+  background-color: #28323b6e;
+}
+
+.BarraLaterar ul {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .Contenedor_PP {
+    flex-direction: column; /* Se apilan: la barra arriba y el contenido abajo */
+  }
+  
+  .BarraLaterar {
+    width: 100%; /* Ocupa todo el ancho en celulares */
+    margin: 10px 10px;
+  }
+
+  
+}
+
+/*============================Contenido Principal======================*/
+.contenido
+{
+    overflow: hidden;
+    text-align: justify; 
+    flex-grow: 1;        /* Hace que el contenido ocupe el resto del espacio */
+    padding: 2px;
+    margin-left: 2%;
+    border: 0.5px solid gray;
+    max-width: 75%;
+    margin-right: 2%;    
+    
+}
+
+@media (max-width: 768px) {
+
+.contenido
+  {
+    width: 100%;
+    align-self: center;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;    
+  }
+    
+}
+
+.carrusel
+{
+    height: 20%;
+    background-color: #022402;
+    width: 100%;
+    overflow: hidden;
+    
+    
+}
+
+h3
+{
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    margin-bottom: 0.6%;
+}
+
+.cont_Primario
+{
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.carrusel .text_scroll
+{
+    margin-top: 0px;
+    display: inline-block;
+    white-space: nowrap;
+    
+    
+    animation: scroll_text 30s linear infinite;
+}
+
+.text_scroll span
+{
+    margin : 0px;
+    padding-right: 50px;
+    font-size: 10pt;
+    color: #FFFF00;
+    font-family: 'Noto Sans Mro';
+    font-weight: 700;
+
+}
+
+@keyframes scroll_text {
+  0% {
+    transform: translateX(0); /* Empieza con la primera frase a la vista */
+  }
+  100% {
+    transform: translateX(-50%); /* Se mueve justo la mitad (una frase entera) */
+  }
+}
+
+.cont_Primario p
+{
+    text-align: justify;
+    font-family: 'Times New Roman';
+    font-size: 14pt;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.resaltar
+{
+    font-weight: 700;
+}
+
+.contenedor_Sec
+{
+    border: 0.5px solid gray;
+    padding : 0px 3px 3px 3px;
+    
+
+}
+
+.Text_presentacion
+{
+    
+    border: 0.5px solid gray;
+    padding : 0px 3px 3px 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Text_presentacion h4
+{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+.Text_presentacion h5
+{
+    font-family: 'Cooper Black';
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: large;
+    color:#660033
+    
+}
+
+blockquote {
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-left: 5px solid #003300;
+    background-color: #71af7175;
+    font-style: italic;
+    color: #142716;
+
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: normal;
+    color: #333;
+    text-align: right;
+}
+
+/*Boton para subir*/
+
+.btn-subir {
+    position: fixed;   /* Lo deja fijo en la pantalla */
+    bottom: 20px;      /* Distancia desde abajo */
+    right: 20px;       /* Distancia desde la derecha */
+    width: 50px;       /* Ancho del botón */
+    height: 50px;      /* Alto del botón */
+    background-color: #003300;
+    color: white;      /* Color de la flecha */
+    text-decoration: none;
+    border-radius: 50%; /* Lo hace circular */
+    display: flex;     /* Para centrar la flecha */
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3); /* Un poco de sombra */
+    z-index: 1000;     /* Para que siempre esté por encima de todo */
+}
+
+.btn-subir:hover {
+    background-color: #005500; /* Cambia de color al pasar el mouse */
+    transform: scale(1.1);     /* Crece un poquito */
+    transition: 0.3s;
+}
+/*Fin del boton para subir*/
+
+
+/* Fotter (Barra Final) */
+.PieDePagina
+{
+    flex-grow: 1;
+    text-decoration: none;
+    margin: 0;
+    margin-top: 15px;
+    padding: 0px;
+    font-size: 8pt;
+    text-align: left;
+}
+
+.PieDePagina .inf_footer
+{
+    width: 100%;
+    background-color: rgb(20, 8, 43);
+    color: white;
+    text-align: center;
+    font-size: 10pt;
+    height: 2%;
+}
+
+
+
+.PieDePagina .information
+{
+    border:2px solid gray;
+    min-height: 10%;
+}
+
+
+
+

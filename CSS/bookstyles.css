@@ -1,0 +1,331 @@
+.imgs
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.galeria
+{
+
+    padding: 20px;
+
+}
+
+
+/* Escondemos el checkbox para que no se vea el cuadrito */
+.zoom-check {
+  display: none;
+}
+
+/* Estilo de la imagen miniatura */
+.img-miniatura {
+  width: 300px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.img-miniatura:hover {
+  opacity: 0.8;
+}
+
+/* El fondo negro (Lightbox) - INICIALMENTE ESCONDIDO */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85); /* Fondo oscuro */
+  display: none; /* <--- Esto lo mantiene oculto */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Cuando el checkbox está marcado (:checked) 
+   mostramos el div hermano que se llama .overlay */
+.zoom-check:checked ~ .overlay {
+  display: flex;
+}
+
+/* Imagen grande dentro del zoom */
+.img-grande {
+  max-width: 90%;
+  max-height: 80%;
+  border: 3px solid white;
+}
+
+/* Botón de cerrar (X) */
+.btn-cerrar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+.titulos
+{
+    text-align: left;
+    font-style: oblique;
+    font-weight: 700;
+}
+
+.descripcion
+{
+    padding: 20px;
+}
+
+.datLibro
+{
+    text-align: left;
+    
+}
+p
+{
+    margin :0px;
+    padding: 0px;
+}
+
+.datLibro td
+{
+    font-size: 14pt;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+.datLibro .criterio
+{
+    text-align: left;
+    vertical-align: top;
+
+    
+    max-width: 20%;
+    min-width: 20%;
+}
+
+
+
+.boton
+{
+
+  padding: 10px;
+  margin: 0;
+  
+  color: rgb(228, 191, 123);
+  background-color: #003300;
+  border-radius: 10%;
+  font-size: 15pt;  
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;  
+}
+
+.boton img
+{
+  padding-bottom: 3px;
+  margin: 0px;
+  align-self: center;
+  vertical-align: text-bottom;
+}
+
+.boton span
+{
+  margin: 0;
+  padding: 0;
+}
+.ob
+{
+    margin-bottom: 20px;
+}
+
+
+.ob .zoom-check:checked ~ .overlay {
+  display: flex;
+}
+
+.ob .boton:hover
+{ 
+    min-height: auto;
+    min-width: none;
+    background-color: #005500; /* Cambia de color al pasar el mouse */
+    font-weight: 700;
+    
+    transform: scale(4.1);     /* Crece un poquito */
+   
+   
+    cursor: pointer;
+}
+
+.informe
+{
+    width: 50%;
+    padding: 20px;
+    background-image: url('../IMAGENES/background.png');
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+@media (max-width: 768px) {
+
+  .informe
+  {
+    width: 80vh;
+    height: 50wh;
+  }
+  
+}
+
+.cabezera
+{
+
+  width: auto;
+  height: 5%;
+  background-color: #003300;
+  color: rgb(238, 218, 129);
+  font-size: large;
+
+  text-align: center;
+  vertical-align: center;
+
+  margin-top: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.ped
+{
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+ 
+}
+
+
+.ped img
+{
+  min-width: 50%;
+  width: 55%;
+  padding: 40px;
+  align-self: center;
+}
+
+.detalles
+{
+  padding: 10px;
+  min-width: 40%;
+  width: 50%;
+  align-items: center;
+  align-self: center;
+}
+
+.resaltar
+{
+    font-style: italic;
+}
+
+.detalles h3
+{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-style: italic;
+  font-size: 16pt;
+  font-weight: 700;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.correo
+{
+  font-style: italic;
+  font-size: 9.5pt;
+  color: darkblue;
+}
+
+.detalles p:last-child
+{
+  padding-top: 8%
+}
+
+.detalles p
+{
+  font-size: 11pt;
+}
+
+.peq
+{
+  font-size: 10pt;
+  font-weight: 700;
+
+}
+
+.ped p
+{
+    margin-bottom: 15px;
+}
+
+.ped p:first-of-type
+{
+  margin-top: 10px;
+}
+
+.importante
+{
+  font-size: 18pt;  
+}
+
+.detalles h4
+{
+
+  text-align: left;
+}
+
+.cont-button
+{
+  width: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.mail
+{
+  
+  display: flex;
+  margin : 0;
+  flex-direction: row;
+  text-align: center;
+
+
+  
+}
+
+.mail img
+{
+  
+    width: 60px;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.amazonbutton img
+{
+  margin-left: 5px;
+  padding: 0;
+  width: 90px;
+}
