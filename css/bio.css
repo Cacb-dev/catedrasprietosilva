@@ -1,0 +1,35 @@
+.contenedor
+{
+    margin: 10%;
+    margin-top: 0;
+    display: flex;
+}
+
+div .columna.img
+{
+    
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    /* border: 2px #324656 solid; */
+    overflow: hidden;
+}
+
+
+.columna.img img
+{
+    width: 60%;
+    justify-self: center;
+    align-self: center;
+
+    /* transform: translateX(40%); */
+    
+}
+
+
+
+#ft
+{
+    margin-top: 5%;
+}

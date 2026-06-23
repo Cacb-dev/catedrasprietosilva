@@ -1,0 +1,17 @@
+.wrap
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-justify
+{
+    text-align: justify;
+}
+
+.p_Gen
+{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+}

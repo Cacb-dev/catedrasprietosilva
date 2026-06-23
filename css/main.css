@@ -1,0 +1,596 @@
+
+*
+{
+    margin:0;
+    padding: 0;
+}
+
+.tamGrande
+{
+    font-size:5rem;
+    margin-right: 2%;
+    margin-left: 2%;
+    text-align: center;
+    justify-content: center ;
+
+}
+
+
+html
+{
+    background-image: url("../imagenes/3DDE.tmp.jpg ");
+}
+
+.barra_sup{
+    background-image: url("../imagenes/slide1.jpg");
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    height: 65vh;
+    width: 100%;
+    background-size: 100% 100%;
+    
+}
+
+.header
+{
+    height: 30%;
+    width: 100%;
+    background-color: rgba(70, 71, 30, 0.418);
+    /* overflow: hidden; */
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+
+.title
+{
+    padding-left: 15%;
+    letter-spacing: 0.5rem;
+    text-align: left;
+    font-size: 20pt;
+    color:white;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: auto;
+    justify-self: center;
+}
+
+div .menu
+{
+    justify-self: right;
+    align-self: self-start;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.menu a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+
+}
+
+.catedra
+{
+    padding: 25px 0px 0px 25px;
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-bottom: 80px;
+    width: 350px;
+    height: 200px;
+    background-color: rgba(35, 92, 35, 0.473);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.catedra h4 
+{
+    padding: 0px;
+    color: white;
+    font-size: 35pt;
+    text-align: left;
+    justify-self: left;
+}
+
+.catedra .mas
+{
+    justify-self: right;
+    margin-left: auto;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    width: 25%;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(72, 169, 207);
+    border-radius: 20%;
+    
+    
+}
+
+.section-separation
+{
+    margin-top: 10%;
+    min-height: 8%;
+    margin-bottom: 6%;
+    min-width: 100%;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+    flex-direction: column;
+    font-family: MingLiU-ExtB, Haettenschweiler;   
+
+}
+
+.section-separation h3
+{
+    color:#001033;
+    text-transform: capitalize;
+}
+
+.triangulo {
+    
+    width: 150px;
+    height: 150px;
+    
+    fill: none;                 /* Hace que el centro sea transparente */
+    stroke: #001033;            /* El color del borde */
+    stroke-width: 8;            /* El grosor del borde */
+    stroke-linejoin: round;    
+}
+
+.main_content
+{
+    display: flex;
+  
+    flex-wrap: wrap;
+    width: 100%;
+    
+    
+}
+
+.contenedor
+{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.columna
+{
+    flex:1;
+    margin: 0;
+}
+
+.separation
+{
+    border-left: 3px #0a2358 dashed;
+    margin: 0;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+
+.barra_sup .descripcion
+{
+    background-color: rgba(0, 255, 34, 0.26);
+    margin-top: 0px;
+    width: 350px;
+    height: 250px;
+    align-self: center;
+    margin-left: auto;
+    margin-bottom: 8px;
+    display: flex;
+}
+
+nav
+{
+    width: auto;
+}
+
+
+.texto
+{
+    margin: 2%;
+    min-width: 20%;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2px;   
+}
+
+.texto .subtitulo
+{
+    
+    font-family: MingLiU-ExtB, Haettenschweiler;
+    letter-spacing: 0.5rem;
+    font-weight: 900;
+    font-size: 18pt;
+    position: relative;
+    width: auto;
+   
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    margin: 0;    
+   
+    margin-bottom: 10px;
+
+    color: #0a2358;
+    
+   
+}
+
+.texto p
+{
+    text-align: left;
+    text-indent: 30px;
+    margin-bottom: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* text-spacing-trim: space-all; */
+    
+}
+
+.separacion
+{
+    min-width: 8%;
+
+}
+
+.resaltar
+{
+    font-weight: 900;
+}
+
+p.centrar{
+  text-align: center;
+  margin: 0%;
+}
+
+.prefacio
+{
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'Cooper Black';
+    font-size: 18pt;
+    color:#660033
+}
+
+blockquote
+{
+    padding: 10px 20px;
+    border-left: 5px solid #001033;
+    background-color: #717caf75;
+    font-style: italic;
+    color: #142716;
+    text-align: center;
+    font-size: 13pt;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: normal;
+    color: #333;
+    text-align: right;
+}
+
+
+.sobreMi
+{
+    width: 100%;
+    display: flex;
+    background-color: #660033;
+    padding: 20px;
+    gap:0px 30px;
+    margin:10px;
+    border-radius: 2%; 
+    color:whitesmoke;
+
+
+}
+
+.sobreMi img
+{
+    display: flex;
+    width: 20%;
+    
+    aspect-ratio: 1/1;
+    padding: 5px;
+    border-radius: 30%;
+
+    object-fit: cover;
+    
+}
+
+.sobreMi .bio{
+    width: auto;
+
+    max-height: 140px;  /* Altura máxima del bloque de texto */
+    overflow: hidden;   
+    line-height: 1.6;
+    color: #ffffff;    
+
+    /* máscara de desvanecimiento al texto */
+    -webkit-mask-image: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 1) 60%,  /* El primer 60% del texto se ve 100% opaco */
+        rgba(0, 0, 0, 0) 100%  /* El final se vuelve 100% transparente */
+    );
+    
+    mask-image: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 1) 60%, 
+        rgba(0, 0, 0, 0) 100%
+    );
+    
+}
+
+.sobreMi .mas{
+    text-decoration: none;
+    color: #7a8eb9;
+    font-size: 14pt;
+    font-weight: 900;
+
+}
+
+.sobreMi .Tit
+{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+}
+
+.carrusel{
+    max-width: 80%;     /* Ancho máximo del carrusel */
+    margin: 0 auto;       /* Centrar en la pantalla */
+    overflow: hidden;     /* Esconde todo lo que sobresalga de los lados */
+    border-radius: 10px;  /* Esquinas redondeadas estéticas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    flex: 0 0 100%;
+}
+
+
+.carrusel-track {
+    display: flex;
+    overflow-x: auto;            /* Permite el scroll horizontal */
+    scroll-behavior: smooth;     /* Hace que el movimiento sea suave */
+    width: 100%;
+    min-width: 100%;
+    /* PROPIEDADES CLAVE DE SCROLL SNAP */
+    scroll-snap-type: x mandatory; /* Fuerza al scroll a ser horizontal y obligatorio */
+    
+    scrollbar-width: none;       
+}
+
+.carrusel-track::-webkit-scrollbar {
+    display: none;
+}
+
+.carrusel-track img {
+    flex: 0 0 100%;             /* Cada imagen ocupa exactamente el 100% del carrusel */
+    width: 100%;
+    height: 400px;              /* Altura fija para el carrusel */
+    object-fit: cover;          /* Evita que las imágenes se deformen */
+  
+    /* PROPIEDAD CLAVE EN LOS HIJOS */
+    scroll-snap-align: start;   /* Al deslizar, la imagen se alinea perfectamente al inicio */
+}
+
+.carrusel-track div
+{
+    flex: 0 0 100%;            
+    width: 100%;
+    height: 400px;
+    object-fit: cover;          /* Evita que las imágenes se deformen */
+    scroll-snap-align: start;
+    background-image: url("../imagenes/slide_paz3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cmasgrande
+{
+    margin-top: 30px;
+    max-width: 90%;
+    padding: 10px;
+    overflow: visible;
+    scrollbar-width: none;
+    position: relative;
+    background-color:#ffb9737c;
+    scroll-snap-type: none;
+}
+
+.libros
+{
+    width: 100%;
+    
+    min-height: 300px;
+    display: flex;
+    padding: 4px;
+    align-self: center;
+    justify-self: center;
+    margin-top: 50px;
+    justify-items: center;
+    align-items: center;
+   
+    scroll-snap-type: x mandatory;
+    
+    scrollbar-width: none;
+   
+    gap:4%
+}
+
+.libros a
+{
+    min-width: 300px;
+    height: 400px;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+    flex-direction: column;
+    overflow: hidden;
+    text-decoration: none;
+    color:black;
+    
+    border:#142716 3px solid;
+    border-radius: 5%;
+
+    transition: transform 0.4s ease-in-out
+
+
+ 
+}
+
+.libros img, .libros div img{
+    max-width: 180px;
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+
+.libros div
+{
+    width: 100%;
+    height: 70%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 4px;
+    object-fit: cover;
+    
+    border-bottom:#142716 5px solid
+    
+}
+
+.libros h4
+{
+    font-size: 14pt;
+    padding-top: 10px;
+    width: 100%;
+    height: 10%;
+
+
+}
+
+.libros h2
+{
+    font-size: 14pt;
+    
+    width: 100%;
+    height: 5%;
+}
+
+.libros a:hover h4, .libros a:hover h2
+{
+    text-decoration: underline;
+    background-size: 100% 2px;
+}
+
+.libros a:hover img
+{
+    opacity: 0.8;
+}
+
+
+.precio
+{
+    text-align: left;
+    justify-self: left;
+    width: 100%;
+    font-size: 18pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 15px;
+    padding-top: 15px;
+    height: 10%;
+}
+
+.carrusel .titulo
+{   
+    display: flex;
+    position: absolute;
+    left: 15px;
+    top: -20px;
+    background-color: #3d1d11;
+    color: #ffffff;
+    border-radius: 12px;
+    /* margin: 10px; */
+    padding: 2px;
+    height: 15%;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    text-transform: capitalize;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 30pt;
+    overflow: hidden;
+}
+.titulo p
+{
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.cont-carrusel
+{
+    position: relative;
+    overflow: hidden;
+    padding: 0 40px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+/* Estilo general para ambos botones */
+.boton-carrusel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente los botones */
+    background-color: rgba(61, 29, 17, 0.7); /* Marrón oscuro con transparencia */
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    z-index: 10; 
+}
+
+.boton-carrusel:hover {
+    background-color: rgba(61, 29, 17, 0.9); /* Se oscurece al pasar el cursor */
+}
+
+/* Posición específica para cada botón */
+.anterior { left: 10px; }
+.siguiente { right: 10px; }
+
+footer
+{
+    min-height: 200px;
+    width: 100%;
+    height: 250px;
+    background-color:#001033;  
+    color: white;
+
+}
